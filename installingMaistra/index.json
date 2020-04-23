@@ -57,6 +57,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "kubernetes"
+    "imageid": "openshift-3-11",
+        "port": 8443
   }
 }
