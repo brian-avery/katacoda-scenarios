@@ -9,7 +9,7 @@
   "environment": {
       "showdashboard": true,
       "dashboards": [{"name": "OpenShift Console", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}, {"name": "Kiali", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}],
-      "uilayout": "editor-terminal",
+      "uilayout": "terminal-iframe",
       "uieditorpath": "/root/installation/",
       "uisettings": "java",
       "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
