@@ -119,3 +119,13 @@ metadata:
 spec:
   members:
 EOM
+
+# install bookinfo
+export CONTROL_PLANE_NS=istio-system
+export BOOKINFO_NS=bookinfo
+oc new-project ${BOOKINFO_NS}
+oc -n ${CONTROL_PLANE_NS} patch --type='json' smmr default -p '[{"op": "add", "path": "/spec/members", "value":["'"${BOOKINFO_NS}"'"]}]'
+oc -n ${BOOKINFO_NS} apply -f https://raw.githubusercontent.com/Maistra/istio/maistra-1.1/samples/bookinfo/platform/kube/bookinfo.yaml
+oc -n ${BOOKINFO_NS} apply -f https://raw.githubusercontent.com/Maistra/istio/maistra-1.1/samples/bookinfo/networking/bookinfo-gateway.yaml
+export GATEWAY_URL=$(oc -n ${CONTROL_PLANE_NS} get route istio-ingressgateway -o jsonpath='{.spec.host}')
+oc -n ${BOOKINFO_NS} apply -f https://raw.githubusercontent.com/Maistra/istio/maistra-1.1/samples/bookinfo/networking/destination-rule-all.yaml
