@@ -15,18 +15,15 @@
       "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
   },
   "backend": {
-    "trainingid": "openshift-3-11", 
+    "trainingid": "openshift-3-11",
     "imageid": "openshift-3-11", "port": 8443
   },
   "details": {
-    "finish": {
-        "text": "finish.md"
+"intro": {
+      "text": "intro.md"
     },
-    "intro": {
-        "text": "intro.md",
-        "credits": "http://developers.redhat.com",
-        "code": "set-env.sh",
-        "courseData": "run-init.sh"
+    "finish": {
+      "text": "finish.md"
     },
     "steps": [
         { "title": "What is Service Mesh and why we need it?", "text": "1what-is-service-mesh.md" },
