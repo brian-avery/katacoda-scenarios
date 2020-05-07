@@ -6,10 +6,10 @@ metadata:
   name: maistraoperator
   namespace: openshift-operators
 spec:
-  channel: '1.1'
+  channel: 'stable'
   installPlanApproval: Automatic
-  name: servicemeshoperator
-  source: redhat-operators
+  name: maistraoperator
+  source: community-operators
   sourceNamespace: openshift-marketplace
 EOM
 
@@ -23,12 +23,12 @@ metadata:
 spec:
   channel: 'stable'
   installPlanApproval: Automatic
-  name: kialioperator
-  source: redhat-operators
+  name: kiali
+  source: community-operators
   sourceNamespace: openshift-marketplace
 EOM
 
-oc create project istio-system
+oc new-project istio-system
 
 cat <<EOM | oc apply -n istio-system -f -
 apiVersion: maistra.io/v1
