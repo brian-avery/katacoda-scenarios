@@ -8,7 +8,7 @@
   "files": [],
   "environment": {
       "showdashboard": true,
-      "dashboard": "Web Console",
+      "dashboards": [{"name": "OpenShift Console", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}],
       "uilayout": "editor-terminal",
       "uieditorpath": "/root/installation/",
       "uisettings": "java",
@@ -19,14 +19,14 @@
     "port": 8443
   },
   "details": {
-"intro": {
+    "intro": {
       "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
     },
     "steps": [
-        { "title": "What is Service Mesh and why we need it?", "text": "1what-is-service-mesh.md" }
+      { "title": "What is Service Mesh and why we need it?", "text": "1what-is-service-mesh.md" }
     ]
   }
 }
