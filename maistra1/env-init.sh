@@ -47,26 +47,6 @@ EOM
 
 oc new-project istio-system
 
-#create our smcp
-cat <<EOM | oc apply -n istio-system -f -
-apiVersion: maistra.io/v1
-kind: ServiceMeshControlPlane
-metadata:
-  name: minimal-install
-spec:
-    template: maistra
-EOM
-
-#create our smmr
-cat <<EOM | oc apply -n istio-system -f -
-apiVersion: maistra.io/v1
-kind: ServiceMeshMemberRoll
-metadata:
-  name: default
-spec:
-  members:
-EOM
-
 #wait for crds
 for crd in servicemeshcontrolplanes.maistra.io servicemeshmemberrolls.maistra.io kialis.kiali.io jaegers.jaegertracing.io
 do
@@ -116,3 +96,23 @@ do
     done
     echo "done."
 done
+
+#create our smcp
+cat <<EOM | oc apply -n istio-system -f -
+apiVersion: maistra.io/v1
+kind: ServiceMeshControlPlane
+metadata:
+  name: minimal-install
+spec:
+    template: default
+EOM
+
+#create our smmr
+cat <<EOM | oc apply -n istio-system -f -
+apiVersion: maistra.io/v1
+kind: ServiceMeshMemberRoll
+metadata:
+  name: default
+spec:
+  members:
+EOM
