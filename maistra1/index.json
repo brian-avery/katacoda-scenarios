@@ -8,7 +8,7 @@
   "files": [],
   "environment": {
       "showdashboard": true,
-      "dashboards": [{"name": "OpenShift Console", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}, {"name": "Kiali", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}],
+      "dashboards": [{"name": "OpenShift Console", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}, {"name": "Kiali", "href": "https://kiali-istio-system.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"}],
       "uilayout": "terminal-iframe",
       "uieditorpath": "/root/installation/",
       "uisettings": "java",
