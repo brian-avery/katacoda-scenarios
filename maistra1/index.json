@@ -28,7 +28,16 @@
       "text": "finish.md"
     },
     "steps": [
-      { "title": "What is Service Mesh and why we need it?", "text": "1what-is-service-mesh.md" }
+      { "title": "What is Service Mesh and why we need it?", "text": "1.what-is-service-mesh.md" },
+      { "title": "Kiali", "text":"2.kial.md" },
+      { "title": "Routing", "text":"3.routing.md" },
+      { "title": "Mutual TLS", "text":"4.mtls.md" },
+      { "title": "Authentication", "text":"5.authentication.md" },
+      { "title": "Whitelisting and Blacklisting", "text":"6.acl.md" },
+      { "title": "Circuit Breaking", "text":"7.circuit-breaking.md"},
+      { "title": "Rate Limiting", "text": "8.rate-limiting.md"},
+      { "title": "Fault Injection", "text": "9.fault-injection.md"}
+
     ]
   }
 }
