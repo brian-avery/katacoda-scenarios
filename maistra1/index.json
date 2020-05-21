@@ -29,7 +29,7 @@
     },
     "steps": [
       { "title": "What is Service Mesh and why we need it?", "text": "1.what-is-service-mesh.md" },
-      { "title": "Kiali", "text":"2.kial.md" },
+      { "title": "Kiali", "text":"2.kiali.md" },
       { "title": "Routing", "text":"3.routing.md" },
       { "title": "Mutual TLS", "text":"4.mtls.md" },
       { "title": "Authentication", "text":"5.authentication.md" },
